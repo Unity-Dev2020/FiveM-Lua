@@ -9,7 +9,7 @@
 RegisterServerEvent("unitydev:telegramlog")
 AddEventHandler("unitydev:telegramlog", function(text)    -- You can also add player name, player ID... everything. That's just a demonstrative event
 
-    PerformHttpRequest("https://api.telegram.org/botTOKENXXXX:TOKENYYYYYY/sendMessage?chat_id=29XXXXX&text=%22..text, 
+    PerformHttpRequest("https://api.telegram.org/botTOKENXXXX:TOKENYYYYYY/sendMessage?chat_id=29XXXXX&text="..text, 
     function(err, text, header) end, 
     'POST')
 
